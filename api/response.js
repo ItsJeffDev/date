@@ -3,7 +3,7 @@ export default async function handler(req, res) {
     const { name, response, timestamp } = req.body;
 
     try {
-      const sheetRes = await fetch("FHdGn4X$uaqs-hi#yx_disAtLPDE#!BiiAUdIslA!uMEj4!dDdFE7TLNVTjcn%Sg", {
+      const sheetRes = await fetch("https://api.sheetbest.com/sheets/125957af-e25c-4e34-8ddf-05d5856687db", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
