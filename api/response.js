@@ -3,7 +3,7 @@ export default async function handler(req, res) {
     const { name, response, timestamp } = req.body;
 
     try {
-      const sheetRes = await fetch("Tu2LnnOpc#v_lxytnv14_U7Igf@N7AfhQCCw_4POwQNJ0Lv0kNZWS7M#_OC!Q_V5", {
+      const sheetRes = await fetch("FHdGn4X$uaqs-hi#yx_disAtLPDE#!BiiAUdIslA!uMEj4!dDdFE7TLNVTjcn%Sg", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
