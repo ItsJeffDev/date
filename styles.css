@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Comic+Neue&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #ff9ac1, #ffd1dc);
+  font-family: 'Comic Neue', cursive;
+  overflow: auto;
+  height: 100vh;
+  
+    /* Add these: */
+  display: flex;
+  justify-content: center; /* horizontal center */
+  align-items: center;    /* vertical center */
+  text-align: center;     /* center text inside container */
+}
+
+
+
+.flower-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://www.transparenttextures.com/patterns/flowers.png');
+  opacity: 0.15;
+  z-index: -1;
+}
+
+.container {
+  max-width: 600px;
+  background: #ffe4ec;
+  border-radius: 25px;
+  box-shadow: 0 0 20px rgba(255, 105, 180, 0.4);
+  padding: 30px;
+  text-align: center;
+  border: 5px double #ff69b4;
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+
+#top {
+  font-family: 'Pacifico', cursive;
+  color: #ff1493;
+  font-size: 2.0em;
+}
+
+.question {
+  font-size: 1.6em;
+  color: #d63384;
+  margin: 25px 0;
+  min-height: 50px;
+}
+
+.buttons button {
+  font-size: 1.3em;
+  padding: 12px 24px;
+  margin: 12px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+#yesBtn {
+  background-color: #ff69b4;
+  color: white;
+}
+
+#noBtn {
+  background-color: #ffc0cb;
+  color: #ff1493;
+}
+
+.buttons button:hover {
+  transform: scale(1.1);
+}
+
+.response {
+  margin-top: 30px;
+  font-size: 1.2em;
+  color: #ff1493;
+  min-height: 100px;
+}
+.response img {
+  margin-top: 10px;
+  max-width: 80%;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(255, 105, 180, 0.5);
+}
